@@ -106,13 +106,14 @@ body {
 
 .header a:hover {
     background-color: lightcoral;
+    border-radius: 10px;
+    color: black;
 }
 
 .hero {
     height: 320px;
     background-image: url(aryan-dhiman-iGLLtLINSkw-unsplash.jpg);
     background-size: cover;
-    background-position: 0 -120px;
     border-top: 5px solid green;
     border-bottom: 5px solid blue;
 }
@@ -192,3 +193,26 @@ body {
 
 .cf {
     zoom: 1;}
+
+@media (max-width:576px) {
+    .container {
+        width: 450px;
+    }
+    .hero {
+        width: 450px;
+    }
+
+    .main {
+        width: 400px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        width: 420px;
+    }
+
+    .footer {
+        width: 450px;
+    }
+}
